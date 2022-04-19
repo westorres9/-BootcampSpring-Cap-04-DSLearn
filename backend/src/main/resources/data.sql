@@ -1,3 +1,5 @@
+
+
 INSERT INTO tb_user (name, email, password) VALUES ('Alex Brown', 'alex@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 INSERT INTO tb_user (name, email, password) VALUES ('Maria Green', 'maria@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
 INSERT INTO tb_user (name, email, password) VALUES ('Billy Blue', 'billy@gmail.com', '$2a$10$eACCYoNOHEqXve8aIWT8Nu3PkMXWBaOxJ9aORUYzfMQCbVBIhZ8tG');
@@ -28,3 +30,10 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2022-03-21T03:00:00Z', TIMESTAMP WITH TIME ZONE '2023-03-21T03:00:00Z', 2L);
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2021-07-08T03:00:00Z', TIMESTAMP WITH TIME ZONE '2022-07-08T03:00:00Z', 3L);
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0', TIMESTAMP WITH TIME ZONE '2021-09-12T03:00:00Z', TIMESTAMP WITH TIME ZONE '2021-09-12T03:00:00Z', 4L);
+
+INSERT INTO tb_resource ( title, description, position, img_Uri, type, offer_id) VALUES ('Trilha Html', 'Trilha principal do curso html', 1, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 1L);
+INSERT INTO tb_resource ( title, description, position, img_Uri, type, offer_id) VALUES ('Trilha Java', 'Trilha principal do curso java', 2, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 2L);
+INSERT INTO tb_resource ( title, description, position, img_Uri, type, offer_id) VALUES ('Trilha Python', 'Trilha principal do curso python', 3, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 3L);
+INSERT INTO tb_resource ( title, description, position, img_Uri, type, offer_id) VALUES ('Trilha Javascript', 'Trilha principal do curso javascript', 4, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 4L);
+
+INSERT INTO tb_notification ( text, moment, read , route, user_id) VALUES ('Bem vindo ao Bootcamp', TIMESTAMP WITH TIME ZONE '2021-08-13T03:00:00Z', TRUE , '/courses/', 1L);
