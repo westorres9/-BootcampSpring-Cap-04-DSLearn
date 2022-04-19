@@ -17,6 +17,9 @@ INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 1);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 2);
 INSERT INTO tb_user_role (user_id, role_id) VALUES (3, 3);
 
+
+INSERT INTO tb_notification ( text, moment, read , route, user_id) VALUES ('Bem vindo ao Bootcamp', TIMESTAMP WITH TIME ZONE '2021-08-13T03:00:00Z', TRUE , '/courses/', 1L);
+
 INSERT INTO tb_course (name, img_url, img_gray_url) VALUES ('Bootcamp HTML', 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 'https://ayltoninacio.com.br/img/p/32w1500.jpg');
 INSERT INTO tb_course (name, img_url, img_gray_url) VALUES ('Bootcamp Java', 'https://s2.glbimg.com/q-0B1SbZWYgxxnLwsf6dbXgivj4=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/P/f/y52r4ySZWLkJjEhKLhgw/2014-11-14-java-logo.jpg', 'https://s2.glbimg.com/q-0B1SbZWYgxxnLwsf6dbXgivj4=/696x390/smart/filters:cover():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/P/f/y52r4ySZWLkJjEhKLhgw/2014-11-14-java-logo.jpg');
 INSERT INTO tb_course (name, img_url, img_gray_url) VALUES ('Bootcamp Python' ,'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGrwDWN_CBSNQ-wjNGO5DHSKjAq1gCVyBzmh2UBnw_HlP8nCOTl8sspJPJ3oOgGKTScs&usqp=CAU', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKGrwDWN_CBSNQ-wjNGO5DHSKjAq1gCVyBzmh2UBnw_HlP8nCOTl8sspJPJ3oOgGKTScs&usqp=CAU');
@@ -35,5 +38,31 @@ INSERT INTO tb_resource ( title, description, position, img_Uri, type, offer_id)
 INSERT INTO tb_resource ( title, description, position, img_Uri, type, offer_id) VALUES ('Trilha Java', 'Trilha principal do curso java', 2, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 2L);
 INSERT INTO tb_resource ( title, description, position, img_Uri, type, offer_id) VALUES ('Trilha Python', 'Trilha principal do curso python', 3, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 3L);
 INSERT INTO tb_resource ( title, description, position, img_Uri, type, offer_id) VALUES ('Trilha Javascript', 'Trilha principal do curso javascript', 4, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 4L);
+INSERT INTO tb_resource ( title, description, position, img_Uri, type, offer_id) VALUES ('Trilha CSharp', 'Trilha principal do curso CSharp', 4, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1, 5L);
 
-INSERT INTO tb_notification ( text, moment, read , route, user_id) VALUES ('Bem vindo ao Bootcamp', TIMESTAMP WITH TIME ZONE '2021-08-13T03:00:00Z', TRUE , '/courses/', 1L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Introdução', 'Vamos apresentar o curso e instruções importantes', 1, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Introdução ao HTML', 'Voce vai conhecer a historia da web', 2, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Principais Tags', 'Voce vai aprender como criar paginas html', 3, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Introdução ao CSS', 'Voce vai aprender como estilizar paginas', 4, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 1L);
+
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Introdução', 'Vamos apresentar o curso e instruções importantes', 1, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 2L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Historia do Java', 'Voce vai conhecer a historia da linguagem Java', 2, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 2L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Primeiro programa Java', 'Voce vai fazer o primeiro programa Java', 3, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 2L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Tipos primitivos em java','Voce vai conhecer os principais tipos em Java', 4, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 2L);
+
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Introdução', 'Vamos apresentar o curso e instruções importantes', 1, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 3L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Historia do Python', 'Voce vai conhecer a historia da linguagem Python', 2, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 3L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Primeiro programa Python', 'Voce vai fazer o primeiro programa Python', 3, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 3L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Tipos primitivos em Python' ,'Voce vai conhecer os principais tipos em Python', 4, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 3L);
+
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Introdução', 'Vamos apresentar o curso e instruções importantes', 1, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 4L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Historia do javascript', 'Voce vai conhecer a historia da linguagem javascript', 2, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 4L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Primeiro programa javascript', 'Voce vai fazer o primeiro programa javascript', 3, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 4L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Tipos primitivos em javascript' ,'Voce vai conhecer os principais tipos em javascript', 4, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 4L);
+
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Introdução', 'Vamos apresentar o curso e instruções importantes', 1, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 5L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Historia do CSharp', 'Voce vai conhecer a historia da linguagem CSharp', 2, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 5L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Primeiro programa CSharp', 'Voce vai fazer o primeiro programa CSharp', 3, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 5L);
+INSERT INTO tb_section ( title, description, position, img_Uri, resource_id) VALUES ('Tipos primitivos em CSharp' ,'Voce vai conhecer os principais tipos em CSharp', 4, 'https://ayltoninacio.com.br/img/p/32w1500.jpg', 5L);
+
+
