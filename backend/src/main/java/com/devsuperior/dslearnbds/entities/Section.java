@@ -27,10 +27,14 @@ public class Section implements Serializable{
 	@JoinColumn(name = "resource_id")
 	private Resource resource;
 	
+	@ManyToOne
+	@JoinColumn(name = "prerequisite_id")
+	private Section prerequisite;
+	
 	public Section() {
 	}
 
-	public Section(Long id, String title, String description, Integer position, String imgUri, Resource resource) {
+	public Section(Long id, String title, String description, Integer position, String imgUri, Resource resource, Section prerequisite) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -38,6 +42,8 @@ public class Section implements Serializable{
 		this.position = position;
 		this.imgUri = imgUri;
 		this.resource = resource;
+		this.prerequisite = prerequisite;
+		
 	}
 
 	public Long getId() {
@@ -86,6 +92,16 @@ public class Section implements Serializable{
 
 	public void setResource(Resource resource) {
 		this.resource = resource;
+	}
+	
+	
+
+	public Section getPrerequisite() {
+		return prerequisite;
+	}
+
+	public void setPrerequisite(Section prerequisite) {
+		this.prerequisite = prerequisite;
 	}
 
 	@Override
